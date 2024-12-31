@@ -1,7 +1,8 @@
 {:deps {org.clojure/clojure {:mvn/version "1.11.1"}
         org.clojure/core.async {:mvn/version "1.6.681"}
         nrepl/nrepl {:mvn/version "1.1.0"}
-        io.github.nextjournal/clerk {:mvn/version "0.17.1102"}}
+        io.github.nextjournal/clerk {:mvn/version "0.17.1102"}
+        io.github.nextjournal/clerk-slideshow {:git/sha "11a83fea564da04b9d17734f2031a4921d917893"}}
  :aliases
  {:run-notebook {:main-opts ["-e" "(require '[nextjournal.clerk :as clerk])"
                              "-e" "(clerk/serve! {:host \"0.0.0.0\" :port 8888})"
